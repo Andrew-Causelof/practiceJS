@@ -1,0 +1,30 @@
+body {
+  background-color: #dcddd8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.blinds {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 500px;
+  }
+
+.blinds__img {
+  display: none;
+}
+
+.blinds__img_active {
+  display: block;
+  max-width: 100%;
+  opacity: 0;
+}
+
+span {
+  background-image: url(../img/1.jpg);
+  height: 100%;
+}
