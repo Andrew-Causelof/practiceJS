@@ -52,6 +52,7 @@ function showLoading() {
 // Filter posts by input
 function filterPosts(e) {
   const term = e.target.value.toUpperCase();
+  
   const posts = document.querySelectorAll('.post');
 
   posts.forEach(post => {
@@ -59,6 +60,7 @@ function filterPosts(e) {
     const body = post.querySelector('.post-body').innerText.toUpperCase();
 
     if (title.indexOf(term) > -1 || body.indexOf(term) > -1) {
+      console.log(title.indexOf(term));
       post.style.display = 'flex';
     } else {
       post.style.display = 'none';
